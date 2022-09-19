@@ -1,4 +1,4 @@
-import { getGreeting } from '../support/app.po';
+import {getDashboardLink, getGreeting} from '../support/app.po';
 
 describe('modulith', () => {
   beforeEach(() => cy.visit('/'));
@@ -8,6 +8,13 @@ describe('modulith', () => {
     cy.login('my-email@something.com', 'myPassword');
 
     // Function helper example, see `../support/app.po.ts` file
-    getGreeting().contains('Welcome modulith');
+    getGreeting().contains('Welcome');
   });
+
+
+  it('should display the dashboard link', () => {
+    // Function helper example, see `../support/app.po.ts` file
+    getDashboardLink().contains('Dashboard');
+  });
+
 });
