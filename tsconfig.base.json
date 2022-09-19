@@ -32,8 +32,10 @@
       "@monorepo/me/logout/ui": ["libs/me/logout/ui/src/index.ts"],
       "@monorepo/me/profile/ui": ["libs/me/profile/ui/src/index.ts"],
       "@monorepo/roles/ui": ["libs/roles/ui/src/index.ts"],
-      "@monorepo/sales/drafts/ui": ["libs/sales/drafts/ui/src/index.ts"],
-      "@monorepo/sales/quotations/ui": ["libs/sales/quotations/ui/src/index.ts"]
+      "@monorepo/sales/applications/ui": [
+        "libs/sales/applications/ui/src/index.ts"
+      ],
+      "@monorepo/sales/drafts/ui": ["libs/sales/drafts/ui/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

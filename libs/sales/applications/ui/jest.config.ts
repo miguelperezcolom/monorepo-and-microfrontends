@@ -1,6 +1,6 @@
 /* eslint-disable */
 export default {
-  displayName: 'sales-quotations-ui',
+  displayName: 'sales-applications-ui',
   preset: '../../../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
   globals: {
@@ -9,7 +9,7 @@ export default {
       stringifyContentPathRegex: '\\.(html|svg)$',
     },
   },
-  coverageDirectory: '../../../../coverage/libs/sales/quotations/ui',
+  coverageDirectory: '../../../../coverage/libs/sales/applications/ui',
   transform: {
     '^.+\\.(ts|mjs|js|html)$': 'jest-preset-angular',
   },

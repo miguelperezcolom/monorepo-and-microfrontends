@@ -15,7 +15,7 @@
     "modulith": "apps/modulith",
     "modulith-e2e": "apps/modulith-e2e",
     "roles-ui": "libs/roles/ui",
-    "sales-drafts-ui": "libs/sales/drafts/ui",
-    "sales-quotations-ui": "libs/sales/quotations/ui"
+    "sales-applications-ui": "libs/sales/applications/ui",
+    "sales-drafts-ui": "libs/sales/drafts/ui"
   }
 }
