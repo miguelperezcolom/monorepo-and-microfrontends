@@ -1,0 +1,25 @@
+{
+  "projectType": "library",
+  "sourceRoot": "libs/me/profile/ui/src",
+  "prefix": "monorepo",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/me/profile/ui"],
+      "options": {
+        "jestConfig": "libs/me/profile/ui/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/me/profile/ui/**/*.ts",
+          "libs/me/profile/ui/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

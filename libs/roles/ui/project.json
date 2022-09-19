@@ -1,0 +1,22 @@
+{
+  "projectType": "library",
+  "sourceRoot": "libs/roles/ui/src",
+  "prefix": "monorepo",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/roles/ui"],
+      "options": {
+        "jestConfig": "libs/roles/ui/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": ["libs/roles/ui/**/*.ts", "libs/roles/ui/**/*.html"]
+      }
+    }
+  },
+  "tags": []
+}

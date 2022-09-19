@@ -1,0 +1,25 @@
+{
+  "projectType": "library",
+  "sourceRoot": "libs/me/logout/ui/src",
+  "prefix": "monorepo",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/me/logout/ui"],
+      "options": {
+        "jestConfig": "libs/me/logout/ui/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/me/logout/ui/**/*.ts",
+          "libs/me/logout/ui/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

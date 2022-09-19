@@ -1,0 +1,25 @@
+{
+  "projectType": "library",
+  "sourceRoot": "libs/conclude/flight/ui/src",
+  "prefix": "monorepo",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/conclude/flight/ui"],
+      "options": {
+        "jestConfig": "libs/conclude/flight/ui/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/conclude/flight/ui/**/*.ts",
+          "libs/conclude/flight/ui/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

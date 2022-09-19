@@ -1,0 +1,25 @@
+{
+  "projectType": "library",
+  "sourceRoot": "libs/conclude/hotel/ui/src",
+  "prefix": "monorepo",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/conclude/hotel/ui"],
+      "options": {
+        "jestConfig": "libs/conclude/hotel/ui/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/conclude/hotel/ui/**/*.ts",
+          "libs/conclude/hotel/ui/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

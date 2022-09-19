@@ -1,0 +1,25 @@
+{
+  "projectType": "library",
+  "sourceRoot": "libs/sales/quotations/ui/src",
+  "prefix": "monorepo",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/sales/quotations/ui"],
+      "options": {
+        "jestConfig": "libs/sales/quotations/ui/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/sales/quotations/ui/**/*.ts",
+          "libs/sales/quotations/ui/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

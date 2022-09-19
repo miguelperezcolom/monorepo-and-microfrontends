@@ -1,0 +1,25 @@
+{
+  "projectType": "library",
+  "sourceRoot": "libs/customers/bookings/ui/src",
+  "prefix": "monorepo",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/customers/bookings/ui"],
+      "options": {
+        "jestConfig": "libs/customers/bookings/ui/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/customers/bookings/ui/**/*.ts",
+          "libs/customers/bookings/ui/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}
