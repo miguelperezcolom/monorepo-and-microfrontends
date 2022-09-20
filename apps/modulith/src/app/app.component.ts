@@ -12,10 +12,9 @@ import {ActivatedRoute, Router} from "@angular/router";
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
 })
-export class AppComponent implements OnInit, AfterViewInit {
+export class AppComponent implements OnInit {
 
-  title = 'Modulith';
-  secTitle = 'Angular based SPA';
+  title = 'GUIPO';
   paths = [
     '',
     'conclude',
@@ -28,15 +27,10 @@ export class AppComponent implements OnInit, AfterViewInit {
   constructor(private router: Router, private route: ActivatedRoute) {}
 
   ngOnInit(): void {
-
     // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
     const sideNavigation: any = document.querySelector("ui5-side-navigation")!;
     document.querySelector("#startButton")?.addEventListener("click", event => sideNavigation.collapsed = !sideNavigation.collapsed);
 
-  }
-
-  ngAfterViewInit = () => {
-    console.log('hola!')
   }
 
   itemSelected = (e:any) => {
