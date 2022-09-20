@@ -1,0 +1,4 @@
+:host {
+  min-width: var(--container-min-width);
+  display: block;
+}

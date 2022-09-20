@@ -7,4 +7,10 @@ import {Component} from '@angular/core';
 })
 export class SupportComponent {
 
+  submitted = false;
+
+  submit = () => {
+    this.submitted = true;
+  }
+
 }

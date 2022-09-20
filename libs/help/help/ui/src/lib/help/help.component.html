@@ -1,1 +1,12 @@
-<p>help works!</p>
+<h1>Maybe I already have an answer</h1>
+<vaadin-select
+  label="My concern"
+  (change)="onChange($event)"
+></vaadin-select>
+<div class="help-container" *ngIf="answer">
+
+  <h4>My answer</h4>
+
+  {{answer}}</div>
+<div></div>
+<a routerLink="/help">Back</a>

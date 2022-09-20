@@ -1,1 +1,10 @@
-<p>customers works!</p>
+<vaadin-vertical-layout>
+  <h1>Customers</h1>
+  <vaadin-grid overflow="bottom end right">
+    <vaadin-grid-column path="firstName"></vaadin-grid-column>
+    <vaadin-grid-column path="lastName"></vaadin-grid-column>
+    <vaadin-grid-column path="email"></vaadin-grid-column>
+    <vaadin-grid-column path="profession"></vaadin-grid-column>
+  </vaadin-grid>
+</vaadin-vertical-layout>
+<a routerLink="/customers">Back</a>

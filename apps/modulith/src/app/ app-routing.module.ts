@@ -16,10 +16,16 @@ import {LogoutComponent} from "@monorepo/me/logout/ui";
 import {MenuComponent as ConcludeMenuComponent} from "@monorepo/conclude/menu/ui"; // CLI imports router
 import {MenuComponent as SalesMenuComponent} from "@monorepo/sales/menu/ui"; // CLI imports router
 import {MenuComponent as CustomersMenuComponent} from "@monorepo/customers/menu/ui"; // CLI imports router
-import {MenuComponent as HelpMenuComponent} from "@monorepo/help/menu/ui"; // CLI imports router
+import {MenuComponent as HelpMenuComponent} from "@monorepo/help/menu/ui";
+import {BookHotelComponent} from "@monorepo/book/hotel/ui";
+import {BookFlightComponent} from "@monorepo/book/flight/ui";
+import {BookTransferComponent} from "@monorepo/book/transfer/ui"; // CLI imports router
 
 const routes: Routes = [
   { path: '', component: DashboardComponent },
+  { path: 'book/hotel', component: BookHotelComponent },
+  { path: 'book/flight', component: BookFlightComponent },
+  { path: 'book/transfer', component: BookTransferComponent },
   { path: 'conclude', component: ConcludeMenuComponent },
   { path: 'conclude/hotel', component: ConcludeHotelComponent },
   { path: 'conclude/flight', component: ConcludeFlightComponent },

@@ -1,1 +1,10 @@
-<p>bookings works!</p>
+<vaadin-vertical-layout>
+  <h1>Bookings</h1>
+  <vaadin-grid overflow="bottom end right">
+    <vaadin-grid-column path="leadName"></vaadin-grid-column>
+    <vaadin-grid-column path="checkin"></vaadin-grid-column>
+    <vaadin-grid-column path="checkout"></vaadin-grid-column>
+    <vaadin-grid-column path="value" text-align="end"></vaadin-grid-column>
+  </vaadin-grid>
+</vaadin-vertical-layout>
+<a routerLink="/customers">Back</a>

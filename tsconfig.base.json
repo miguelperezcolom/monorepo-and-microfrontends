@@ -15,6 +15,9 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@monorepo/book/flight/ui": ["libs/book/flight/ui/src/index.ts"],
+      "@monorepo/book/hotel/ui": ["libs/book/hotel/ui/src/index.ts"],
+      "@monorepo/book/transfer/ui": ["libs/book/transfer/ui/src/index.ts"],
       "@monorepo/conclude/flight/ui": ["libs/conclude/flight/ui/src/index.ts"],
       "@monorepo/conclude/hotel/ui": ["libs/conclude/hotel/ui/src/index.ts"],
       "@monorepo/conclude/menu/ui": ["libs/conclude/menu/ui/src/index.ts"],

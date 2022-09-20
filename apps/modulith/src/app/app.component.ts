@@ -1,10 +1,15 @@
-import {AfterViewInit, Component, OnInit} from '@angular/core';
+import {Component} from '@angular/core';
 import '@vaadin/button';
 import '@vaadin/app-layout';
 import '@vaadin/app-layout/vaadin-drawer-toggle.js';
 import '@vaadin/tabs';
 import '@vaadin/menu-bar';
 import '@vaadin/vertical-layout';
+import '@vaadin/icon';
+import '@vaadin/grid';
+import '@vaadin/text-area';
+import '@vaadin/select';
+import '@vaadin/date-picker';
 import {ActivatedRoute, Router} from "@angular/router";
 
 @Component({
@@ -12,7 +17,7 @@ import {ActivatedRoute, Router} from "@angular/router";
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
 })
-export class AppComponent implements OnInit {
+export class AppComponent {
 
   title = 'GUIPO';
   paths = [
@@ -25,13 +30,6 @@ export class AppComponent implements OnInit {
   ];
 
   constructor(private router: Router, private route: ActivatedRoute) {}
-
-  ngOnInit(): void {
-    // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-    const sideNavigation: any = document.querySelector("ui5-side-navigation")!;
-    document.querySelector("#startButton")?.addEventListener("click", event => sideNavigation.collapsed = !sideNavigation.collapsed);
-
-  }
 
   itemSelected = (e:any) => {
       const index = e.detail.value;

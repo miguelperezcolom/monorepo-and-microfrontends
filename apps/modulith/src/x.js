@@ -11,9 +11,7 @@ import {style} from '@vaadin/vaadin-lumo-styles/style.js';
 import {typography} from '@vaadin/vaadin-lumo-styles/typography.js';
 import {userColors} from '@vaadin/vaadin-lumo-styles/user-colors.js';
 import {utility} from '@vaadin/vaadin-lumo-styles/utility.js';
-import '@vaadin/vaadin-lumo-styles/vaadin-iconset.js';
-
-console.log(utility.cssText);
+import '@vaadin/vaadin-icons/vaadin-iconset.js';
 
 const sheet = document.createElement('style')
 sheet.innerHTML = `

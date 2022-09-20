@@ -1,0 +1,25 @@
+{
+  "projectType": "library",
+  "sourceRoot": "libs/book/hotel/ui/src",
+  "prefix": "monorepo",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/book/hotel/ui"],
+      "options": {
+        "jestConfig": "libs/book/hotel/ui/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/book/hotel/ui/**/*.ts",
+          "libs/book/hotel/ui/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

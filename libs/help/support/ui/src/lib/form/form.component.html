@@ -1,0 +1,14 @@
+<h2>What's up?</h2>
+<vaadin-form-layout [attr.responsiveSteps]="this.responsiveSteps">
+  <vaadin-text-field label="First name"></vaadin-text-field>
+  <vaadin-text-field label="Last name"></vaadin-text-field>
+  <!-- Stretch the username field over 2 columns -->
+  <vaadin-text-area
+    label="Comment"
+    maxlength="140"
+  ></vaadin-text-area>
+</vaadin-form-layout>
+<vaadin-horizontal-layout style="justify-content: end;">
+  <vaadin-button theme="primary" (click)="performSubmit()">Please give me an answer</vaadin-button>
+</vaadin-horizontal-layout>
+<a routerLink="/help">Back</a>

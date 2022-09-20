@@ -2,6 +2,9 @@
   "$schema": "./node_modules/nx/schemas/workspace-schema.json",
   "version": 2,
   "projects": {
+    "book-flight-ui": "libs/book/flight/ui",
+    "book-hotel-ui": "libs/book/hotel/ui",
+    "book-transfer-ui": "libs/book/transfer/ui",
     "conclude-flight-ui": "libs/conclude/flight/ui",
     "conclude-hotel-ui": "libs/conclude/hotel/ui",
     "conclude-menu-ui": "libs/conclude/menu/ui",

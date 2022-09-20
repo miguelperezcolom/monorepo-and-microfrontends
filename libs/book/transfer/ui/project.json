@@ -1,0 +1,25 @@
+{
+  "projectType": "library",
+  "sourceRoot": "libs/book/transfer/ui/src",
+  "prefix": "monorepo",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/book/transfer/ui"],
+      "options": {
+        "jestConfig": "libs/book/transfer/ui/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/book/transfer/ui/**/*.ts",
+          "libs/book/transfer/ui/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

@@ -1,0 +1,10 @@
+<h2>Fill the form</h2>
+<vaadin-form-layout [attr.responsiveSteps]="this.responsiveSteps">
+  <vaadin-date-picker label="Checkin"></vaadin-date-picker>
+  <vaadin-date-picker label="Checkout"></vaadin-date-picker>
+  <!-- Stretch the username field over 2 columns -->
+  <vaadin-text-field colspan="2" label="Hotel name"></vaadin-text-field>
+</vaadin-form-layout>
+<vaadin-horizontal-layout style="justify-content: end;">
+  <vaadin-button theme="primary" (click)="performBook()">Book</vaadin-button>
+</vaadin-horizontal-layout>

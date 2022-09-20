@@ -3,3 +3,7 @@
   max-width: 1024px;
   margin: auto;
 }
+
+:root {
+  --container-min-width: 600px;
+}

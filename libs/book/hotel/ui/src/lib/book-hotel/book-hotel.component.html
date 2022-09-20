@@ -1,0 +1,6 @@
+<h1>Book a hotel</h1>
+<div>
+<monorepo-form *ngIf="!booked" (book)="book()"></monorepo-form>
+<monorepo-booked *ngIf="booked"></monorepo-booked>
+</div>
+<a routerLink="">Back</a>
