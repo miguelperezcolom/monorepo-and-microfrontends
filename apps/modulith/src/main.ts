@@ -5,13 +5,7 @@ import { AppModule } from './app/app.module';
 import { environment } from './environments/environment';
 
 
-import {utility} from '@vaadin/vaadin-lumo-styles/utility.js';
-
-console.log(utility.cssText);
-
-const sheet = document.createElement('style')
-sheet.innerHTML = utility.cssText;
-document.body.appendChild(sheet);
+import './x'
 
 if (environment.production) {
   enableProdMode();
