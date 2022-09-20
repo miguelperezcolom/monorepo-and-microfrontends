@@ -19,6 +19,7 @@
     "@angular/platform-browser": "~14.2.0",
     "@angular/platform-browser-dynamic": "~14.2.0",
     "@angular/router": "~14.2.0",
+    "@babel/runtime": "^7.19.0",
     "@nrwl/angular": "14.7.5",
     "@vaadin/app-layout": "^23.2.1",
     "@vaadin/button": "^23.2.1",
