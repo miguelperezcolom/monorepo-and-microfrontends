@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component} from '@angular/core';
 import '@vaadin/vertical-layout';
 import '@vaadin/horizontal-layout';
 
@@ -7,8 +7,6 @@ import '@vaadin/horizontal-layout';
   templateUrl: './dashboard.component.html',
   styleUrls: ['./dashboard.component.css'],
 })
-export class DashboardComponent implements OnInit {
-  constructor() {}
+export class DashboardComponent {
 
-  ngOnInit(): void {}
 }

@@ -1,12 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'monorepo-support',
   templateUrl: './support.component.html',
   styleUrls: ['./support.component.css'],
 })
-export class SupportComponent implements OnInit {
-  constructor() {}
+export class SupportComponent {
 
-  ngOnInit(): void {}
 }

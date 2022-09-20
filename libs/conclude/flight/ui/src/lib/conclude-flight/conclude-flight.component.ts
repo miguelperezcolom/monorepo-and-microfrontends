@@ -1,12 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'monorepo-conclude-flight',
   templateUrl: './conclude-flight.component.html',
   styleUrls: ['./conclude-flight.component.css'],
 })
-export class ConcludeFlightComponent implements OnInit {
-  constructor() {}
+export class ConcludeFlightComponent {
 
-  ngOnInit(): void {}
 }

@@ -14,21 +14,8 @@ import {ActivatedRoute, Router} from "@angular/router";
 })
 export class AppComponent implements OnInit, AfterViewInit {
 
-  constructor(private router: Router, private route: ActivatedRoute) {}
-
-  ngOnInit(): void {
-    const sideNavigation: any = document.querySelector("ui5-side-navigation")!;
-    document.querySelector("#startButton")?.addEventListener("click", event => sideNavigation.collapsed = !sideNavigation.collapsed);
-
-  }
-
   title = 'Modulith';
   secTitle = 'Angular based SPA';
-
-  ngAfterViewInit = () => {
-    console.log('hola!')
-  }
-
   paths = [
     '',
     'conclude/hotel',
@@ -37,6 +24,20 @@ export class AppComponent implements OnInit, AfterViewInit {
     'roles',
     'help/help'
   ];
+
+  constructor(private router: Router, private route: ActivatedRoute) {}
+
+  ngOnInit(): void {
+
+    // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+    const sideNavigation: any = document.querySelector("ui5-side-navigation")!;
+    document.querySelector("#startButton")?.addEventListener("click", event => sideNavigation.collapsed = !sideNavigation.collapsed);
+
+  }
+
+  ngAfterViewInit = () => {
+    console.log('hola!')
+  }
 
   itemSelected = (e:any) => {
       const index = e.detail.value;

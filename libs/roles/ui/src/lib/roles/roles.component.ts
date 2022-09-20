@@ -1,12 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'monorepo-roles',
   templateUrl: './roles.component.html',
   styleUrls: ['./roles.component.css'],
 })
-export class RolesComponent implements OnInit {
-  constructor() {}
+export class RolesComponent {
 
-  ngOnInit(): void {}
 }
