@@ -1,38 +1,27 @@
-<div style="height: 600px;">
-  <ui5-shellbar
-    [attr.primary-title]="title"
-    [attr.secondary-title]="secTitle"
-    show-co-pilot
-  >
-    <ui5-button icon="menu" slot="startButton" id="startButton"></ui5-button>
-  </ui5-shellbar>
+<vaadin-vertical-layout style="align-items: center">
+  <vaadin-app-layout>
+  <h1 slot="navbar">MyApp</h1>
+  <vaadin-tabs slot="navbar" (selected-changed)="itemSelected($event)">
+    <vaadin-tab>
+      <a tabindex="-1">Dashboard</a>
+    </vaadin-tab>
+    <vaadin-tab>
+      <a tabindex="-1">Conclude links</a>
+    </vaadin-tab>
+    <vaadin-tab>
+      <a tabindex="-1">Sales</a>
+    </vaadin-tab>
+    <vaadin-tab>
+      <a tabindex="-1">Customers</a>
+    </vaadin-tab>
+    <vaadin-tab>
+      <a tabindex="-1">Roles</a>
+    </vaadin-tab>
+    <vaadin-tab>
+      <a tabindex="-1">Help</a>
+    </vaadin-tab>
+  </vaadin-tabs>
+</vaadin-app-layout>
 
-  <div style="display: flex;">
-
-    <ui5-side-navigation (selection-change)="itemSelected($event)">
-      <ui5-side-navigation-item text="Dashboard" selected icon="home" data-path=""></ui5-side-navigation-item>
-      <ui5-side-navigation-item text="Conclude links" expanded icon="chain-link">
-        <ui5-side-navigation-sub-item text="Hotel" data-path="conclude/hotel"></ui5-side-navigation-sub-item>
-        <ui5-side-navigation-sub-item text="Flight" data-path="conclude/flight"></ui5-side-navigation-sub-item>
-        <ui5-side-navigation-sub-item text="Transfer" data-path="conclude/transfer"></ui5-side-navigation-sub-item>
-      </ui5-side-navigation-item>
-      <ui5-side-navigation-item text="Sales" expanded icon="group">
-        <ui5-side-navigation-sub-item text="Drafts" data-path="sales/drafts"></ui5-side-navigation-sub-item>
-        <ui5-side-navigation-sub-item text="Applications" data-path="sales/applications"></ui5-side-navigation-sub-item>
-      </ui5-side-navigation-item>
-      <ui5-side-navigation-item text="Customers" expanded icon="group">
-        <ui5-side-navigation-sub-item text="Customers" data-path="customers/customers"></ui5-side-navigation-sub-item>
-        <ui5-side-navigation-sub-item text="Bookings" data-path="customers/bookings"></ui5-side-navigation-sub-item>
-      </ui5-side-navigation-item>
-      <ui5-side-navigation-item text="Roles" icon="action-settings" data-path="roles"></ui5-side-navigation-item>
-      <ui5-side-navigation-item text="Help" icon="sys-help" slot="fixedItems">
-        <ui5-side-navigation-sub-item text="Support" data-path="help/support"></ui5-side-navigation-sub-item>
-        <ui5-side-navigation-sub-item text="Help" data-path="help/help"></ui5-side-navigation-sub-item>
-      </ui5-side-navigation-item>
-    </ui5-side-navigation>
-
-    <div>
-      <router-outlet></router-outlet>
-    </div>
-  </div>
-</div>
+  <router-outlet></router-outlet>
+</vaadin-vertical-layout>

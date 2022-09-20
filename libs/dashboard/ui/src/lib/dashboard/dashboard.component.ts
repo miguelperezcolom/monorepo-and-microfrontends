@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import '@vaadin/vertical-layout';
+import '@vaadin/horizontal-layout';
 
 @Component({
   selector: 'monorepo-dashboard',
