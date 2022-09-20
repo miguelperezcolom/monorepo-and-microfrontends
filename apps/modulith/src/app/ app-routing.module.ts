@@ -12,18 +12,26 @@ import {BookingsComponent} from "@monorepo/customers/bookings/ui";
 import {SupportComponent} from "@monorepo/help/support/ui";
 import {HelpComponent} from "@monorepo/help/help/ui";
 import {ProfileComponent} from "@monorepo/me/profile/ui";
-import {LogoutComponent} from "@monorepo/me/logout/ui"; // CLI imports router
+import {LogoutComponent} from "@monorepo/me/logout/ui";
+import {MenuComponent as ConcludeMenuComponent} from "@monorepo/conclude/menu/ui"; // CLI imports router
+import {MenuComponent as SalesMenuComponent} from "@monorepo/sales/menu/ui"; // CLI imports router
+import {MenuComponent as CustomersMenuComponent} from "@monorepo/customers/menu/ui"; // CLI imports router
+import {MenuComponent as HelpMenuComponent} from "@monorepo/help/menu/ui"; // CLI imports router
 
 const routes: Routes = [
   { path: '', component: DashboardComponent },
+  { path: 'conclude', component: ConcludeMenuComponent },
   { path: 'conclude/hotel', component: ConcludeHotelComponent },
   { path: 'conclude/flight', component: ConcludeFlightComponent },
   { path: 'conclude/transfer', component: ConcludeTransferComponent },
+  { path: 'sales', component: SalesMenuComponent },
   { path: 'sales/drafts', component: DraftsComponent },
   { path: 'sales/applications', component: ApplicationsComponent },
+  { path: 'customers', component: CustomersMenuComponent },
   { path: 'customers/customers', component: CustomersComponent },
   { path: 'customers/bookings', component: BookingsComponent },
   { path: 'roles', component: RolesComponent },
+  { path: 'help', component: HelpMenuComponent },
   { path: 'help/support', component: SupportComponent },
   { path: 'help/help', component: HelpComponent },
   { path: 'me/profile', component: ProfileComponent },

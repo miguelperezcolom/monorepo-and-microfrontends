@@ -4,11 +4,14 @@
   "projects": {
     "conclude-flight-ui": "libs/conclude/flight/ui",
     "conclude-hotel-ui": "libs/conclude/hotel/ui",
+    "conclude-menu-ui": "libs/conclude/menu/ui",
     "conclude-transfer-ui": "libs/conclude/transfer/ui",
     "customers-bookings-ui": "libs/customers/bookings/ui",
     "customers-customers-ui": "libs/customers/customers/ui",
+    "customers-menu-ui": "libs/customers/menu/ui",
     "dashboard-ui": "libs/dashboard/ui",
     "help-help-ui": "libs/help/help/ui",
+    "help-menu-ui": "libs/help/menu/ui",
     "help-support-ui": "libs/help/support/ui",
     "me-logout-ui": "libs/me/logout/ui",
     "me-profile-ui": "libs/me/profile/ui",
@@ -16,6 +19,7 @@
     "modulith-e2e": "apps/modulith-e2e",
     "roles-ui": "libs/roles/ui",
     "sales-applications-ui": "libs/sales/applications/ui",
-    "sales-drafts-ui": "libs/sales/drafts/ui"
+    "sales-drafts-ui": "libs/sales/drafts/ui",
+    "sales-menu-ui": "libs/sales/menu/ui"
   }
 }

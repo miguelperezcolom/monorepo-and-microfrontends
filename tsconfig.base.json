@@ -17,6 +17,7 @@
     "paths": {
       "@monorepo/conclude/flight/ui": ["libs/conclude/flight/ui/src/index.ts"],
       "@monorepo/conclude/hotel/ui": ["libs/conclude/hotel/ui/src/index.ts"],
+      "@monorepo/conclude/menu/ui": ["libs/conclude/menu/ui/src/index.ts"],
       "@monorepo/conclude/transfer/ui": [
         "libs/conclude/transfer/ui/src/index.ts"
       ],
@@ -26,8 +27,10 @@
       "@monorepo/customers/customers/ui": [
         "libs/customers/customers/ui/src/index.ts"
       ],
+      "@monorepo/customers/menu/ui": ["libs/customers/menu/ui/src/index.ts"],
       "@monorepo/dashboard/ui": ["libs/dashboard/ui/src/index.ts"],
       "@monorepo/help/help/ui": ["libs/help/help/ui/src/index.ts"],
+      "@monorepo/help/menu/ui": ["libs/help/menu/ui/src/index.ts"],
       "@monorepo/help/support/ui": ["libs/help/support/ui/src/index.ts"],
       "@monorepo/me/logout/ui": ["libs/me/logout/ui/src/index.ts"],
       "@monorepo/me/profile/ui": ["libs/me/profile/ui/src/index.ts"],
@@ -35,7 +38,8 @@
       "@monorepo/sales/applications/ui": [
         "libs/sales/applications/ui/src/index.ts"
       ],
-      "@monorepo/sales/drafts/ui": ["libs/sales/drafts/ui/src/index.ts"]
+      "@monorepo/sales/drafts/ui": ["libs/sales/drafts/ui/src/index.ts"],
+      "@monorepo/sales/menu/ui": ["libs/sales/menu/ui/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

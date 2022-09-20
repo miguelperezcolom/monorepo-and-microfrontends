@@ -18,11 +18,11 @@ export class AppComponent implements OnInit, AfterViewInit {
   secTitle = 'Angular based SPA';
   paths = [
     '',
-    'conclude/hotel',
-    'sales/drafts',
-    'customers/bookings',
+    'conclude',
+    'sales',
+    'customers',
     'roles',
-    'help/help'
+    'help'
   ];
 
   constructor(private router: Router, private route: ActivatedRoute) {}
