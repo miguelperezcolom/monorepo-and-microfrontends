@@ -1,27 +1,31 @@
 <vaadin-vertical-layout style="align-items: center">
   <vaadin-app-layout>
   <h3 slot="navbar" class="ml-l mr-l">MyApp</h3>
-  <vaadin-tabs slot="navbar" (selected-changed)="itemSelected($event)">
-    <vaadin-tab>
-      <a tabindex="-1">Dashboard</a>
-    </vaadin-tab>
-    <vaadin-tab>
-      <a tabindex="-1">Conclude links</a>
-    </vaadin-tab>
-    <vaadin-tab>
-      <a tabindex="-1">Sales</a>
-    </vaadin-tab>
-    <vaadin-tab>
-      <a tabindex="-1">Customers</a>
-    </vaadin-tab>
-    <vaadin-tab>
-      <a tabindex="-1">Roles</a>
-    </vaadin-tab>
-    <vaadin-tab>
-      <a tabindex="-1">Help</a>
-    </vaadin-tab>
-  </vaadin-tabs>
+    <div class="container" slot="navbar">
+      <vaadin-tabs (selected-changed)="itemSelected($event)">
+        <vaadin-tab>
+          <a tabindex="-1">Dashboard</a>
+        </vaadin-tab>
+        <vaadin-tab>
+          <a tabindex="-1">Conclude links</a>
+        </vaadin-tab>
+        <vaadin-tab>
+          <a tabindex="-1">Sales</a>
+        </vaadin-tab>
+        <vaadin-tab>
+          <a tabindex="-1">Customers</a>
+        </vaadin-tab>
+        <vaadin-tab>
+          <a tabindex="-1">Roles</a>
+        </vaadin-tab>
+        <vaadin-tab>
+          <a tabindex="-1">Help</a>
+        </vaadin-tab>
+      </vaadin-tabs>
+    </div>
 </vaadin-app-layout>
 
-  <router-outlet></router-outlet>
+  <div class="container">
+    <router-outlet></router-outlet>
+  </div>
 </vaadin-vertical-layout>
