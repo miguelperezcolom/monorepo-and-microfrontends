@@ -10,6 +10,9 @@ import '@vaadin/grid';
 import '@vaadin/text-area';
 import '@vaadin/select';
 import '@vaadin/date-picker';
+import '@vaadin/form-layout';
+import '@vaadin/password-field';
+
 import {ActivatedRoute, Router} from "@angular/router";
 
 @Component({

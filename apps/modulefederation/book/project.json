@@ -1,0 +1,118 @@
+{
+  "projectType": "application",
+  "sourceRoot": "apps/modulefederation/book/src",
+  "prefix": "monorepo",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/angular:webpack-browser",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/apps/modulefederation/book",
+        "index": "apps/modulefederation/book/src/index.html",
+        "main": "apps/modulefederation/book/src/main.ts",
+        "polyfills": "apps/modulefederation/book/src/polyfills.ts",
+        "tsConfig": "apps/modulefederation/book/tsconfig.app.json",
+        "assets": [
+          "apps/modulefederation/book/src/favicon.ico",
+          "apps/modulefederation/book/src/assets"
+        ],
+        "styles": ["apps/modulefederation/book/src/styles.css"],
+        "scripts": [],
+        "customWebpackConfig": {
+          "path": "apps/modulefederation/book/webpack.config.js"
+        }
+      },
+      "configurations": {
+        "production": {
+          "budgets": [
+            {
+              "type": "initial",
+              "maximumWarning": "500kb",
+              "maximumError": "1mb"
+            },
+            {
+              "type": "anyComponentStyle",
+              "maximumWarning": "2kb",
+              "maximumError": "4kb"
+            }
+          ],
+          "fileReplacements": [
+            {
+              "replace": "apps/modulefederation/book/src/environments/environment.ts",
+              "with": "apps/modulefederation/book/src/environments/environment.prod.ts"
+            }
+          ],
+          "outputHashing": "all",
+          "customWebpackConfig": {
+            "path": "apps/modulefederation/book/webpack.prod.config.js"
+          }
+        },
+        "development": {
+          "buildOptimizer": false,
+          "optimization": false,
+          "vendorChunk": true,
+          "extractLicenses": false,
+          "sourceMap": true,
+          "namedChunks": true
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "serve": {
+      "executor": "@nrwl/angular:webpack-server",
+      "configurations": {
+        "production": {
+          "browserTarget": "modulefederation-book:build:production"
+        },
+        "development": {
+          "browserTarget": "modulefederation-book:build:development"
+        }
+      },
+      "defaultConfiguration": "development",
+      "options": {
+        "port": 4202,
+        "publicHost": "http://localhost:4202"
+      }
+    },
+    "extract-i18n": {
+      "executor": "@angular-devkit/build-angular:extract-i18n",
+      "options": {
+        "browserTarget": "modulefederation-book:build"
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "apps/modulefederation/book/**/*.ts",
+          "apps/modulefederation/book/**/*.html"
+        ]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/apps/modulefederation/book"],
+      "options": {
+        "jestConfig": "apps/modulefederation/book/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "serve-static": {
+      "executor": "@nrwl/angular:file-server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "modulefederation-book:build",
+        "port": 4202
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "modulefederation-book:build:development"
+        },
+        "production": {
+          "buildTarget": "modulefederation-book:build:production"
+        }
+      }
+    }
+  },
+  "tags": []
+}

@@ -1,0 +1,31 @@
+<vaadin-vertical-layout style="align-items: center">
+  <vaadin-app-layout>
+    <h3 slot="navbar" class="ml-l mr-l">{{title}}</h3>
+    <div class="container" slot="navbar">
+      <vaadin-tabs (selected-changed)="itemSelected($event)" style="width: 800px" >
+        <vaadin-tab class="ml-l">
+          <a tabindex="-1">Dashboard</a>
+        </vaadin-tab>
+        <vaadin-tab class="ml-l">
+          <a tabindex="-1">Conclude links</a>
+        </vaadin-tab>
+        <vaadin-tab class="ml-l">
+          <a tabindex="-1">Sales</a>
+        </vaadin-tab>
+        <vaadin-tab class="ml-l">
+          <a tabindex="-1">Customers</a>
+        </vaadin-tab>
+        <vaadin-tab class="ml-l">
+          <a tabindex="-1">Roles</a>
+        </vaadin-tab>
+        <vaadin-tab class="ml-l mr-l">
+          <a tabindex="-1">Help</a>
+        </vaadin-tab>
+      </vaadin-tabs>
+    </div>
+  </vaadin-app-layout>
+
+  <div class="container">
+    <router-outlet></router-outlet>
+  </div>
+</vaadin-vertical-layout>

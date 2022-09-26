@@ -1,6 +1,5 @@
 import {Component} from '@angular/core';
-import '@vaadin/form-layout';
-import '@vaadin/password-field';
+
 
 @Component({
   selector: 'monorepo-book-hotel',
