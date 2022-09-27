@@ -1,8 +1,11 @@
 <vaadin-vertical-layout style="align-items: center">
   <vaadin-app-layout>
-  <h3 slot="navbar" class="ml-l mr-l">{{title}}</h3>
+    <h3 slot="navbar" class="ml-l mr-l">{{ title }}</h3>
     <div class="container" slot="navbar">
-      <vaadin-tabs (selected-changed)="itemSelected($event)" style="width: 800px" >
+      <vaadin-tabs
+        (selected-changed)="itemSelected($event)"
+        style="width: 800px"
+      >
         <vaadin-tab class="ml-l">
           <a tabindex="-1">Dashboard</a>
         </vaadin-tab>
@@ -23,7 +26,7 @@
         </vaadin-tab>
       </vaadin-tabs>
     </div>
-</vaadin-app-layout>
+  </vaadin-app-layout>
 
   <div class="container">
     <router-outlet></router-outlet>

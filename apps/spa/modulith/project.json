@@ -1,19 +1,23 @@
 {
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
-  "sourceRoot": "apps/modulith/src",
+  "sourceRoot": "apps/spa/modulith/src",
   "prefix": "monorepo",
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "dist/apps/modulith",
-        "index": "apps/modulith/src/index.html",
-        "main": "apps/modulith/src/main.ts",
-        "polyfills": "apps/modulith/src/polyfills.ts",
-        "tsConfig": "apps/modulith/tsconfig.app.json",
-        "assets": ["apps/modulith/src/favicon.ico", "apps/modulith/src/assets"],
-        "styles": ["apps/modulith/src/styles.css"],
+        "outputPath": "dist/apps/spa/modulith",
+        "index": "apps/spa/modulith/src/index.html",
+        "main": "apps/spa/modulith/src/main.ts",
+        "polyfills": "apps/spa/modulith/src/polyfills.ts",
+        "tsConfig": "apps/spa/modulith/tsconfig.app.json",
+        "assets": [
+          "apps/spa/modulith/src/favicon.ico",
+          "apps/spa/modulith/src/assets"
+        ],
+        "styles": ["apps/spa/modulith/src/styles.css"],
         "scripts": []
       },
       "configurations": {
@@ -32,8 +36,8 @@
           ],
           "fileReplacements": [
             {
-              "replace": "apps/modulith/src/environments/environment.ts",
-              "with": "apps/modulith/src/environments/environment.prod.ts"
+              "replace": "apps/spa/modulith/src/environments/environment.ts",
+              "with": "apps/spa/modulith/src/environments/environment.prod.ts"
             }
           ],
           "outputHashing": "all"
@@ -53,10 +57,10 @@
       "executor": "@angular-devkit/build-angular:dev-server",
       "configurations": {
         "production": {
-          "browserTarget": "modulith:build:production"
+          "browserTarget": "spa-modulith:build:production"
         },
         "development": {
-          "browserTarget": "modulith:build:development"
+          "browserTarget": "spa-modulith:build:development"
         }
       },
       "defaultConfiguration": "development"
@@ -64,20 +68,23 @@
     "extract-i18n": {
       "executor": "@angular-devkit/build-angular:extract-i18n",
       "options": {
-        "browserTarget": "modulith:build"
+        "browserTarget": "spa-modulith:build"
       }
     },
     "lint": {
       "executor": "@nrwl/linter:eslint",
       "options": {
-        "lintFilePatterns": ["apps/modulith/**/*.ts", "apps/modulith/**/*.html"]
+        "lintFilePatterns": [
+          "apps/spa/modulith/**/*.ts",
+          "apps/spa/modulith/**/*.html"
+        ]
       }
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/apps/modulith"],
+      "outputs": ["coverage/apps/spa/modulith"],
       "options": {
-        "jestConfig": "apps/modulith/jest.config.ts",
+        "jestConfig": "apps/spa/modulith/jest.config.ts",
         "passWithNoTests": true
       }
     }

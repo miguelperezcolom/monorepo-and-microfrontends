@@ -68,5 +68,5 @@
       "unitTestRunner": "jest"
     }
   },
-  "defaultProject": "modulith"
+  "defaultProject": "spa-modulith"
 }

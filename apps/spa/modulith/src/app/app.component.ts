@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import { Component } from '@angular/core';
 import '@vaadin/button';
 import '@vaadin/app-layout';
 import '@vaadin/app-layout/vaadin-drawer-toggle.js';
@@ -13,7 +13,7 @@ import '@vaadin/date-picker';
 import '@vaadin/form-layout';
 import '@vaadin/password-field';
 
-import {ActivatedRoute, Router} from "@angular/router";
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'monorepo-root',
@@ -21,22 +21,13 @@ import {ActivatedRoute, Router} from "@angular/router";
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-
   title = 'GUIPO';
-  paths = [
-    '',
-    'conclude',
-    'sales',
-    'customers',
-    'roles',
-    'help'
-  ];
+  paths = ['', 'conclude', 'sales', 'customers', 'roles', 'help'];
 
   constructor(private router: Router, private route: ActivatedRoute) {}
 
-  itemSelected = (e:any) => {
-      const index = e.detail.value;
-      this.router.navigate([this.paths[index]], {relativeTo:this.route});
-  }
-
+  itemSelected = (e: any) => {
+    const index = e.detail.value;
+    this.router.navigate([this.paths[index]], { relativeTo: this.route });
+  };
 }

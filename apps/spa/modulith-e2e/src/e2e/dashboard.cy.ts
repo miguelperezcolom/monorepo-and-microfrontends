@@ -1,4 +1,4 @@
-import {getHotelProductLink} from '../support/dashboard.po';
+import { getHotelProductLink } from '../support/dashboard.po';
 
 describe('dashboard', () => {
   beforeEach(() => cy.visit('/'));
@@ -7,5 +7,4 @@ describe('dashboard', () => {
     // Function helper example, see `../support/app.po.ts` file
     getHotelProductLink().contains('Hotel');
   });
-
 });

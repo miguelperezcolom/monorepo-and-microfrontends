@@ -24,11 +24,11 @@
     "modulefederation-dashboard-e2e": "apps/modulefederation/dashboard-e2e",
     "modulefederation-host": "apps/modulefederation/host",
     "modulefederation-host-e2e": "apps/modulefederation/host-e2e",
-    "modulith": "apps/modulith",
-    "modulith-e2e": "apps/modulith-e2e",
     "roles-ui": "libs/roles/ui",
     "sales-applications-ui": "libs/sales/applications/ui",
     "sales-drafts-ui": "libs/sales/drafts/ui",
-    "sales-menu-ui": "libs/sales/menu/ui"
+    "sales-menu-ui": "libs/sales/menu/ui",
+    "spa-modulith": "apps/spa/modulith",
+    "spa-modulith-e2e": "apps/spa/modulith-e2e"
   }
 }

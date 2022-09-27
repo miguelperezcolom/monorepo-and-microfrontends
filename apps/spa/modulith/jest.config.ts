@@ -1,7 +1,7 @@
 /* eslint-disable */
 export default {
-  displayName: 'modulith',
-  preset: '../../jest.preset.js',
+  displayName: 'spa-modulith',
+  preset: '../../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
   globals: {
     'ts-jest': {
@@ -9,7 +9,7 @@ export default {
       stringifyContentPathRegex: '\\.(html|svg)$',
     },
   },
-  coverageDirectory: '../../coverage/apps/modulith',
+  coverageDirectory: '../../../coverage/apps/spa/modulith',
   transform: {
     '^.+\\.(ts|mjs|js|html)$': 'jest-preset-angular',
   },
