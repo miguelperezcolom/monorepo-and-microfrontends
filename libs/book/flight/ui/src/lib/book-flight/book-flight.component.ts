@@ -1,12 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'monorepo-book-flight',
   templateUrl: './book-flight.component.html',
   styleUrls: ['./book-flight.component.css'],
 })
-export class BookFlightComponent implements OnInit {
-  constructor() {}
-
-  ngOnInit(): void {}
+export class BookFlightComponent {
 }

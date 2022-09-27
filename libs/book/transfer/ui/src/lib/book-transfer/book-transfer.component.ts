@@ -5,8 +5,5 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './book-transfer.component.html',
   styleUrls: ['./book-transfer.component.css'],
 })
-export class BookTransferComponent implements OnInit {
-  constructor() {}
-
-  ngOnInit(): void {}
+export class BookTransferComponent {
 }
