@@ -13,6 +13,8 @@
     "customers-customers-ui": "libs/customers/customers/ui",
     "customers-menu-ui": "libs/customers/menu/ui",
     "dashboard-ui": "libs/dashboard/ui",
+    "e2e-help-help-ui-e2e": "apps/e2e/help-help-ui-e2e",
+    "e2e-help-support-ui-e2e": "apps/e2e/help-support-ui-e2e",
     "help-help-ui": "libs/help/help/ui",
     "help-menu-ui": "libs/help/menu/ui",
     "help-support-ui": "libs/help/support/ui",
