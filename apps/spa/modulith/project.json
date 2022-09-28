@@ -87,6 +87,13 @@
         "jestConfig": "apps/spa/modulith/jest.config.ts",
         "passWithNoTests": true
       }
+    },
+    "deploy": {
+      "executor": "@netlify-builder/deploy:deploy",
+      "options": {
+        "outputPath": "dist/apps/spa/modulith",
+        "siteId": "695e3fb9-3ec8-49de-b979-4e21a9472fa4"
+      }
     }
   },
   "tags": []
